@@ -10,11 +10,11 @@
 	--orange: #DE935FFF;
 	--light-orange: #F4C8ADFF;
 	--yellow: #F0C674FF;
-	--green: #B5BD68FF;
+	--green: #005D1F;
 	--light-green: #DCDDB3FF;
 	--light-blue: #8ABEB7FF;
 	--blue: #81A2BEFF;
-	--purple: #B294BBFF;
+	--purple: rgb(25, 25, 25);
 	--light-purple: #D8C8DDFF;
 	--black: #000000FF;
 	--black-op-50: #00000088;
@@ -415,6 +415,13 @@ body {
 	-o-transition: all 0.3s linear;
 }
 
+button {
+	border-radius: 0.3em;
+	background-color: var(--green);
+	color: var(--white);
+	padding: 0.3em;
+}
+
 img {
 	max-height: 100vh;
 	width: fit-content;
@@ -496,6 +503,22 @@ input {
 	font-style: italic;
 }
 
+th,
+td {
+	border: 1px solid #000;
+	padding: 0.3em;
+}
+
+th {
+	text-align: center;
+}
+
+ol,
+ul {
+	width: fit-content;
+	text-align: left;
+}
+
 /* Classes */
 .after-input {
 	display: none;
@@ -507,7 +530,6 @@ input {
 
 .bordered {
 	border: 1px solid var(--green);
-	border-radius: 0.2em;
 	margin: 0.1em;
 	padding: 0.1em;
 }
@@ -533,6 +555,11 @@ input {
 	position: absolute;
 	top: 1em;
 	width: 10em !important;
+}
+
+.h3em {
+	margin-top: 0.8em;
+	height: 3em;
 }
 
 .img-responsive>img {
@@ -746,8 +773,8 @@ input {
 
 .header {
 	position: fixed;
-	width: 60%;
-	left: 20vw;
+	width: 100%;
+	left: 0vw;
 	z-index: 100;
 	border-radius: 0;
 	top: 0px;
@@ -883,7 +910,7 @@ input {
 	border: 0;
 	background: var(--green);
 	padding: 0 10px;
-	margin-top: 25px;
+	margin-top: 0;
 }
 
 .hero-text2 {
@@ -1095,9 +1122,9 @@ a.arrow-link:hover {
 }
 
 .heading {
-	padding: 3px 10px;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
+	padding: 0.3em 1em;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
 	display: block;
 }
 
@@ -1436,7 +1463,6 @@ footer input.form-control {
 	background-size: 1em;
 	/*border-left: 4px solid var(--yellow);*/
 	color: var(--black);
-	font-size: 50px;
 	font-weight: bolder;
 	padding-left: 0.5em;
 	height: 1em;
@@ -1787,10 +1813,10 @@ figcaption .project-creator {
 	clear: both;
 }
 
-#map50w {
+#map {
 	display: block;
 	height: 360px;
-	width: 50%;
+	width: 100%;
 	background-color: var(--white);
 }
 

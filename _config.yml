@@ -1,0 +1,16 @@
+name: Set GMAIL API environment secrets
+on: workflow_dispatch
+
+jobs:
+  open-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GMAIL_API_KEY: ${{ secrets.GMAIL_API_KEY }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
