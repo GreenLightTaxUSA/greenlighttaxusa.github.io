@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/isotope.css" media="screen" />
   <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link href=../css/animate.css" rel="stylesheet" media="screen">
-  <link href=../flexslider/flexslider.css" rel="stylesheet" />
-  <link href=../js/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="../css/animate.css" rel="stylesheet" media="screen">
+  <link href="../flexslider/flexslider.css" rel="stylesheet" />
+  <link href="../js/owl-carousel/owl.carousel.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css" />
   <link href="../font/css/font-awesome.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="../images/green-light-tax-usa.png" type="image/x-icon">
@@ -82,12 +82,32 @@
     <br>
   </section>
 
-  <section id="appointment" class="page-section">
+  <section id="team" class="page-section">
     <div class="container">
       <div class="heading text-center">
-        <h2>Reserve appointment</h2>
-        <iframe style="height:400px;width:100vw" frameborder="0"
-          src="https://app.greminders.com/c/taxappointment/taxpreparation?bv=25e63837-0d99-42f6-8a18-db82061d974d"></iframe>
+        <h2>Join our team!</h2>
+        <p>
+          Please fill out this form to send an e-mail to our HR team,
+          don't forget to add your preferred CA address and contact details
+        </p>
+        <p>WORK IN PROGRESS, send email to <a href="mailto:careers@greenlighttaxusa.com">
+            careers@greenlighttaxusa.com
+          </a> in the meantime</p>
+      </div>
+      <div class="team-content">
+        <div class="row" style="background-color:#999; padding: 1em; margin: 0 0.6em; border-radius: 0.5em;">
+          <label for="fullName">Full Name:</label>
+          <input id="fullName" type="text" style="margin-right:1em;cursor:not-allowed;" disabled>
+          <label for="phone">Phone number:</label>
+          <input id="phone" type="number" style="margin-right:1em;cursor:not-allowed;" disabled>
+          <label for="email">E-mail:</label>
+          <input id="email" type="text" style="cursor:not-allowed;" disabled><br>
+          <label for="motivationLetter">Motivation letter:</label><br>
+          <textarea id="motivationLetter" style="height:100px;width:820px" disabled></textarea><br>
+          <label for="cv">Upload CV:</label>
+          <input id="cv" type="file" style="cursor:not-allowed;" disabled><br>
+          <button style="cursor:not-allowed;">Send</button>
+        </div>
       </div>
     </div>
   </section>
