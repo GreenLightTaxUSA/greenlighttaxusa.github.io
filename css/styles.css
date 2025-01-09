@@ -626,6 +626,20 @@ ul {
 	opacity: 1;
 }
 
+.position-absolute {
+	position: absolute;
+	top: 0;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.white-shadow,
+.white-shadow * {
+	text-shadow: 1px 1px #fff;
+}
+
 .pDark p {
 	color: var(--dark-gray);
 }
