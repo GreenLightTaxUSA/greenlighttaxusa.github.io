@@ -103,6 +103,9 @@
           <source src="music/LANDR-Summer.wav" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+        <div id="enableMusicPrompt" style="display: none;">
+          <button id="playMusicButton">Enable Background Music</button>
+        </div>
       </div>
 
       <!--<div class="team-content">
@@ -176,6 +179,7 @@
   <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
   <script src="../js/leaflet.js"></script>
   <script>
+    //#region Leaflet
     const map = L.map('map').setView([36, -121], 6).setMaxBounds(
       [[38, -123], [34, -118]]
     );
@@ -217,23 +221,29 @@
       <p>4713 Greenleaf Ct, Suite B, Modesto, CA 95356</p>
     `}));
     mdPopUp.addTo(map);
-
-    /*
-    var popup = L.popup([37.7031382, -121.0743955], {
-      content: '<p>Hello world!<br />This is a nice popup.</p>'
-    }).openOn(map);
-    var tooltip = new L.ClickableTooltip({
-      direction: 'center',
-      permanent: true,
-      noWrap: true,
-      opacity: 0.9
-    });
-    tooltip.setContent("Example");
-    tooltip.setLatLng(new L.LatLng(38, -121));
-    tooltip.addTo(map);*/
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 16, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+    //#endregion
+    //#region Autoplay on Safari/Mac
+    const audio = document.getElementById('backgroundMusic');
+    const playMusicButton = document.getElementById('playMusicButton');
+    const enableMusicPrompt = document.getElementById('enableMusicPrompt');
+    audio.play().then(() => {
+      console.log("Music is playing automatically.");
+    }).catch(() => {
+      console.log("Autoplay blocked. Prompting user for interaction.");
+      enableMusicPrompt.style.display = 'block';
+      playMusicButton.addEventListener('click', () => {
+        audio.play().then(() => {
+          enableMusicPrompt.style.display = 'none'; // Hide the prompt
+          console.log("Music started after user interaction.");
+        }).catch((error) => {
+          console.error("Failed to start music:", error);
+        });
+      });
+    });
+    //#endregion
   </script>
   <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
   <script src="../js/modernizr-latest.js"></script>
