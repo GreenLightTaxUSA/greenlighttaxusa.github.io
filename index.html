@@ -82,142 +82,25 @@
   <div id="#top"></div>
 
   <section id="home" class="page-section">
-    <div class="container position-relative">
-      <video width="768" height="432" style="display:inline" autoplay loop>
+    <div class="container">
+      <h2 class="col-md-6 col-sm-8">Welcome to Green Light Tax USA</h2>
+      <div class="col-md-6 col-sm-4 position-relative">
+        <div class="pad-left-05em position-absolute z-index-10">
+          Playing "Ron Gelinas - Summer (Original Mix)"
+        </div>
+        <audio controls autoplay>
+          <source src="music/LANDR-Summer.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <video autoplay loop>
         <source src="videos/irs-taxes-782.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="heading position-absolute text-center white-shadow">
-        <h2>Welcome to Green Light Tax USA</h2>
-        <br>
-        <p>Please navigate in the upper menu for our different resources.</p>
-      </div>
+
     </div>
   </section>
-
-  <section class="page-section">
-    <br>
   </section>
-
-  <!--
-  <section id="about" class="page-section">
-    <div class="container">
-      <div class="heading text-center">
-        <h2>About Us</h2>
-        <div class="area1 columns right">
-          <p>Lorem ipsum dolor sit ea eum labitur fabulas at pro.
-            Odio reformidans est eu, has ut, invenire ut his. Has molestie. </p>
-          <p>Odio reformidans est eu, has ut, invenire ut his. Has molestie
-            an. Sed id, ad vel noster propriae. Ius ut vivendo, at mea.</p>
-          <p>No fabulas prodesset vel, ut quo nec et vidisse fabulas. </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <section id="home" class="page-section">
-          <div class="banner-container">
-            <div id="main-slider" class="flexslider">
-              <ul class="slides">
-                <li class="cs-green">
-                  <img src="images/slides/1.jpg" alt="" />
-                  <div class="flex-caption">
-                    <h3>Tax Filing Assistance for Small Businesses</h3>
-                    <p>
-                      Many small businesses in the United States struggle with navigating the complex tax filing system,
-                      especially when they are just starting.<br>
-
-                      A tax advisor company can provide valuable support by helping small business owners understand their tax
-                      obligations and file their returns accurately and on time.<br>
-
-                      From determining which deductions they can claim to understanding the various tax credits available, a
-                      professional tax advisor ensures that small business owners don't miss out on potential savings.<br>
-
-                      Additionally, the company offers advice on organizing financial records, helping business owners keep
-                      everything in order for future tax filings.<br>
-
-                      In addition to tax filing, tax advisors can provide year-round guidance on tax planning to minimize
-                      future liabilities.<br>
-
-                      They can help small business owners choose the best tax structure, such as sole proprietorship, LLC, or
-                      S-corp, which can significantly impact their tax rate.<br>
-
-                      As tax laws evolve, a tax advisor keeps businesses updated on new regulations and potential changes,
-                      ensuring that businesses remain compliant and prepared for audits or tax adjustments.
-                    </p>
-                  </div>
-                </li>
-                <li class="cs-green">
-                  <img src="images/slides/2.jpg" alt="" />
-                  <div class="flex-caption">
-                    <h3>Tax Advice for Freelancers and Independent Contractors</h3>
-                    <p>
-                      Freelancers and independent contractors in the United States often face unique challenges when it comes
-                      to taxes.<br>
-
-                      Without an employer to withhold taxes, they are responsible for calculating and paying their own taxes,
-                      including self-employment tax.<br>
-
-                      A tax advisor can provide assistance by explaining the self-employment tax system and offering guidance
-                      on quarterly estimated payments.<br>
-
-                      They can also help freelancers track deductible business expenses, such as home office costs, equipment,
-                      and travel expenses, which can reduce their taxable income and save them money.<br>
-
-                      In addition to helping with current-year tax obligations, tax advisors can assist freelancers with
-                      long-term tax planning.<br>
-
-                      They can offer strategies to reduce taxable income, such as contributing to retirement accounts like SEP
-                      IRAs or Solo 401(k)s.<br>
-
-                      With tailored advice, a tax advisor helps freelancers better manage their finances throughout the year
-                      and avoid the stress of a large tax bill during tax season.<br>
-
-                      By working with a tax advisor, freelancers can ensure that they are prepared, compliant, and taking
-                      advantage of all available tax-saving opportunities.
-                    </p>
-                  </div>
-                </li>
-                <li class="cs-green">
-                  <img src="images/slides/3.jpg" alt="" />
-                  <div class="flex-caption">
-                    <h3>Tax Planning for High-Income Individuals</h3>
-                    <p>
-                      High-income individuals often face complex tax situations due to multiple income streams, investment
-                      portfolios, and various deductions and exemptions.<br>
-
-                      A tax advisor can offer personalized tax planning services to help these individuals minimize their tax
-                      burden while staying compliant with IRS rules.<br>
-
-                      The advisor will work with the client to analyze income sources, determine effective tax strategies, and
-                      explore tax-advantaged investment opportunities like retirement accounts and charitable giving.<br>
-
-                      This proactive planning helps ensure that high-income earners are not overpaying on their taxes and can
-                      maximize their wealth-building potential.<br>
-
-                      Moreover, tax advisors help high-net-worth individuals navigate tax laws concerning estates and
-                      trusts.<br>
-
-                      They can guide clients through estate planning, helping them reduce estate taxes and preserve wealth for
-                      future generations.<br>
-
-                      Whether it's through setting up tax-efficient trust structures or understanding the tax implications of
-                      asset transfers, a tax advisor ensures that wealthy individuals' financial plans are optimized for both
-                      growth and tax efficiency.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="container hero-text2">
-            <h3>&nbsp;</h3>
-          </div>
-        </section>
-
-      </div>
-    </div>
-  </section>
-  -->
 
   <section id="contactUs" class="page-section">
     <div class="container">
@@ -314,19 +197,6 @@
     `}));
     mdPopUp.addTo(map);
 
-    /*
-    var popup = L.popup([37.7031382, -121.0743955], {
-      content: '<p>Hello world!<br />This is a nice popup.</p>'
-    }).openOn(map);
-    var tooltip = new L.ClickableTooltip({
-      direction: 'center',
-      permanent: true,
-      noWrap: true,
-      opacity: 0.9
-    });
-    tooltip.setContent("Example");
-    tooltip.setLatLng(new L.LatLng(38, -121));
-    tooltip.addTo(map);*/
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 16, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
