@@ -499,6 +499,13 @@ video.vertical {
 	height: 100vh;
 }
 
+/* Hide controls in Safari on Mac */
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel {
+	display: none !important;
+}
+
 hr {
 	border-color: var(--light-gray);
 }
@@ -1764,7 +1771,7 @@ figcaption .project-creator {
 }
 
 .w1em {
-	width: 1em;
+	width: 1em !important;
 	height: auto;
 }
 
