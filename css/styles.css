@@ -91,14 +91,6 @@
 		max-height: none;
 	}
 
-	#services,
-	#aboutUs,
-	#wor,
-	#plans,
-	#contactUs {
-		padding: 45px 0;
-	}
-
 	.row .six {
 		width: auto;
 	}
@@ -304,7 +296,7 @@
 	}
 
 	.page-section {
-		padding: 0px;
+		padding: 0.3em;
 	}
 
 	.page-section h1 {
@@ -428,10 +420,6 @@
 	cursor: not-allowed;
 }
 
-html {
-	background-color: var(--black);
-}
-
 body {
 	height: 100%;
 	font-family: Arial, sans-serif;
@@ -486,6 +474,11 @@ a {
 	transition: all 0.2s linear;
 }
 
+#contactUs a,
+footer a {
+	color: var(--light-green);
+}
+
 a:hover {
 	color: var(--light-gray);
 	text-decoration: none;
@@ -518,10 +511,6 @@ body {
 footer {
 	border-top: 1px solid var(--dark-gray);
 	padding: 45px 0;
-	background: var(--white);
-}
-
-footer {
 	background: var(--black);
 }
 
@@ -699,7 +688,6 @@ ul {
 
 .btn:hover {
 	color: var(--black) !important;
-
 	background: var(--green);
 }
 
@@ -1009,7 +997,7 @@ ul {
 .page-section {
 	width: 100%;
 	height: auto;
-	padding: 35px 0;
+	padding: 0.5em;
 }
 
 .no-padding {
@@ -1773,6 +1761,11 @@ figcaption .project-creator {
 
 .z-index-10 {
 	z-index: 10;
+}
+
+.w1em {
+	width: 1em;
+	height: auto;
 }
 
 #services img {
